@@ -1,0 +1,87 @@
+/*#book-boxes {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    padding: 1em;*/
+/*    gap: 1em;*/
+
+/*}*/
+.book-image > img{
+    height: 200px;
+    width: 130px;
+    /*padding: 15px;*/
+    object-fit: cover;
+
+    /*border: 3px solid lightgray;*/
+
+}
+
+
+.book-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #81858b;
+    padding: 1em;
+    gap: 0.25em;
+    width: 350px;
+    height: fit-content;
+    border-radius: 10px;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.book-title {
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    text-align: left;
+    font-size: 15px;
+    /*border: 2px solid black;*/
+
+
+
+
+}
+/*.book-image > img{*/
+/*    border: 5px solid #81858b;*/
+/*}*/
+
+.book-author {
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    font-size: small;
+    text-align: left;
+    /*border: 2px solid white;*/
+
+
+
+}
+.book-price{
+  font-weight: bold;
+    font-size: large;
+    text-align: right;
+    float: right;
+    /*border: 2px solid white;*/
+    /*margin-left: 20px;*/
+
+}
+.book-des{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: 10px;
+    /*border: 2px solid green;*/
+    padding: 10px;
+}
+.we-add-book{
+
+
+    margin-left:150px
+}
+.book-box-item{
+    display: flex;
+    flex-direction: row;
+
+}
+
+

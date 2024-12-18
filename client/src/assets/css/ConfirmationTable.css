@@ -1,0 +1,105 @@
+/* Table Styles */
+.confirmation_table {
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    max-width: 800px;
+    margin: 2em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.confirmation_th {
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid #ddd;
+}
+
+.confirmation_td {
+    padding: 1em;
+    background-color: white;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+
+.confirmation_tr:nth-child(even) > td {
+    background-color: #f2f2f2;
+}
+
+/* Adjusted for new column layout: Title, Quantity, and Price */
+.confirmation_td:nth-child(1) {
+    text-align: left;
+    font-weight: bold;
+}
+
+.confirmation_td:nth-child(2) {
+    text-align: center;
+}
+
+.confirmation_td:nth-child(3) {
+    text-align: right;
+}
+
+/* Total Row Styling */
+.confirmation_tr.total-row {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #e6f7e6;
+}
+
+.confirmation_td.total {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+/* Checkout Section */
+.checkout-text {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-view {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects */
+.confirmation_tr:hover {
+    background-color: #e9f5e9;
+}
+
+.confirmation_td:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .confirmation_table {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .confirmation_td {
+        padding: 0.8em;
+    }
+
+    .confirmation_th {
+        font-size: 14px;
+        padding: 0.8em;
+    }
+}

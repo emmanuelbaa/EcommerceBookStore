@@ -1,0 +1,143 @@
+/* Confirmation Page Layout */
+.confirmationView {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2em auto;
+    font-family: Arial, sans-serif;
+    width: 90%;
+    max-width: 900px;
+    background-color: #f8f8f8;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.confirmationView ul {
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.confirmationView ul > li {
+    margin: 0.5em 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Confirmation Table Styling */
+.confirmation_table {
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.confirmation_th {
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid #ddd;
+}
+
+.confirmation_td {
+    padding: 1em;
+    background-color: white;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+
+.confirmation_tr:nth-child(even) > td {
+    background-color: #f2f2f2;
+}
+
+.confirmation_td:nth-child(1) {
+    text-align: left;
+    font-weight: bold;
+}
+
+.confirmation_td:nth-child(2) {
+    text-align: center;
+}
+
+.confirmation_td:nth-child(3) {
+    text-align: right;
+}
+
+/* Total Row Styling */
+.confirmation_tr.total-row {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #e6f7e6;
+}
+
+.confirmation_td.total {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+/* Customer Information Section */
+#customerInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#customerInfo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#customerInfo li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+}
+
+#customerInfo li b {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .confirmationView {
+        width: 100%;
+    }
+
+    .confirmation_table {
+        margin: 1em 0;
+    }
+
+    .confirmation_td {
+        padding: 0.8em;
+    }
+
+    .confirmation_th {
+        font-size: 14px;
+        padding: 0.8em;
+    }
+
+    #customerInfo {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+
+    #customerInfo li {
+        font-size: 14px;
+    }
+}
